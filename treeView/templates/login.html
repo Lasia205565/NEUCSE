@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>计算机科学与工程学院</title>
+    <script type="text/javascript" src="treeview/static/css/login.js"></script>
+<style>
+body
+{
+  background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495741391138&di=73e7772a1e600d6421da3a9cf5b18d71&imgtype=0&src=http%3A%2F%2Fdl.bizhi.sogou.com%2Fimages%2F2013%2F07%2F04%2F344161.png);
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+#login_frame
+{
+  width:400px;
+  height:260px;
+  padding:13px;
+  position:absolute;
+  left:50%;
+  top:20%;
+  margin-left: -200px;
+  margin-right: -130px;
+  background-color: rgba(240,255,255,0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+form p > *
+{
+   display:inline-block;
+   vertical-align: middle;
+} 
+#image_logo
+{
+  margin-top: 22px;
+} 
+.label_input
+{
+  font-size:14px;
+  font-family: "宋体";
+  width: 70px;
+  height:28px;
+  line-height: 28px;
+  text-align: center;
+  color:white;
+  background-color: #369;
+  opacity: 0.75;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.text_field
+{
+  width:278px;
+  height:28px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border:0;
+}
+#btn_login
+{
+  font-size:14px;
+  font-family: "宋体";
+  width:80px;
+  height:28px;
+  line-height: 28px;
+  text-align: center;
+  color:white;
+  background-color:#369;
+  opacity: 0.75;
+  border-radius: 6px;
+  border:0;
+  float:left;
+}
+#forget_pwd
+{
+  font-size:12px;
+  color:white;
+  text-decoration: none;
+  position:relative;
+  float:right;
+  top:5px;
+}
+#forget_pwd:hover
+{
+  color:blue;
+  text-decoration:underline;
+}
+#login_control
+{
+  padding:0 28px;
+}
+
+</style>
+</head>
+<body>
+<div id="login_frame">
+  <p id="image_logo"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495570503549&di=bbe875e4033e56190d7d0df8793bc355&imgtype=0&src=http%3A%2F%2Fbbs.sciencenet.cn%2Fblog%2Fadmin%2Fimages%2Fupimages%2F2008225193511813.jpg" width="250" height="90"></p>
+  
+  <form method="post" action="login.js">
+     <p><label class="label_input">用户名</label><input type="text" id="username" class="text_field"></p>
+  	<p><label class="label_input">密码</label><input type="text" id="password" class="text_field"></p>
+  	<div id="login_control">
+  	   <input type="button" id="btn_login" value="登录" onclick="login();"/>
+  	   <a id="forget_pwd" href="forget_pwd.html">忘记密码？</a>
+  	   </div>
+  </form>
+</div>
+</body>
+</html>
